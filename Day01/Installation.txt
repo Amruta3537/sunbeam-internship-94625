@@ -1,0 +1,8 @@
+Day01- Installation
+
+1. MySQL
+2. Postman
+3. Git
+4. VS code
+5. Python
+6. Node
