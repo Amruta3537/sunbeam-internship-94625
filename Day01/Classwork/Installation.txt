@@ -1,0 +1,15 @@
+Day1- Installation
+     
+	1. For database- MySQL
+	2. For backend- Python-Flask
+	3. For forntend- React(vit)
+	4. languge- JavaScript(JS)
+	5. Postman
+	6. VS code
+
+
+
+All Installations are done!
+
+
+
