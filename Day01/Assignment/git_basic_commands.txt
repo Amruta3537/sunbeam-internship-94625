@@ -1,0 +1,35 @@
+1.verify the git version 
+ 	 git --version
+
+2.to cloning the data
+ 	 git clone remote url
+
+3. transferring from one folder to another folder
+ 	 cd file name//forward
+ 	 cd ..file name//backward
+
+4.For autocomplete 
+  	Tab key
+
+5. branching workflow
+
+  1.create a new branch: 
+                    git checkout -b branchname  //creates and switches the branch
+  2.List all branches :
+          	    git branch
+  3.Switch branches: 
+                    git checkout branchname1
+                    git checkout branchname2
+
+
+6.Make changes: add-commit-push
+  1. check status: 
+	          git status
+  2. to add file into Stage area: 
+			         git add file.txt //for a specific file
+                                 git add . //for all file
+  3.commit changes: 
+		git commit -m "msg"
+  4. Push branch to GitHub:
+			 git push origin branchname
+                         git push //push changes into current branch
