@@ -1,0 +1,13 @@
+#titel{
+    color: red;
+}
+
+#msg{
+    color: blue;
+}
+
+button{
+    color: black;
+    background-color: #3cf63c;
+    cursor: pointer;
+}
