@@ -41,7 +41,7 @@ def get_all_courses():
     values = []
 
     if start_date and end_date:
-        query += " WHERE start_datde >= %s AND end_date <= %s"
+        query += " WHERE start_date >= %s AND end_date <= %s"
         values = [start_date, end_date]
 
     cursor.execute(query, values)
@@ -61,17 +61,17 @@ def add_course():
 
     query = """
     INSERT INTO courses
-    (course_name, description, fees, start_datde, end_date, video_expire_days)
+    (course_name, description, fees, start_date, end_date, video_expire_days)
     VALUES (%s, %s, %s, %s, %s, %s)
     """
 
     values = (
-        data["courseName"],
+        data["course_name"],
         data["description"],
         data["fees"],
-        data["startDate"],
-        data["endDate"],
-        data["videoExpireDays"]
+        data["start_date"],
+        data["end_date"],
+        data["video_expire_days"]
     )
 
     cursor.execute(query, values)
@@ -83,7 +83,7 @@ def add_course():
 
 # Update Course
 @app.route("/course/update/<int:courseId>", methods=["PUT"])
-def update_course(course_id):
+def update_course(courseId):
     data = request.json
 
     conn = getConnection()
@@ -94,20 +94,20 @@ def update_course(course_id):
     course_name=%s,
     description=%s,
     fees=%s,
-    start_datde=%s,
+    start_date=%s,
     end_date=%s,
     video_expire_days=%s
     WHERE course_id=%s
     """
 
     values = (
-        data["courseName"],
+        data["course_name"],
         data["description"],
         data["fees"],
-        data["startDate"],
-        data["endDate"],
-        data["videoExpireDays"],
-        course_id
+        data["start_date"],
+        data["end_date"],
+        data["video_expire_days"],
+        courseId
     )
 
     cursor.execute(query, values)
@@ -119,11 +119,11 @@ def update_course(course_id):
 
 # Delete Course
 @app.route("/course/delete/<int:courseId>", methods=["DELETE"])
-def delete_course(course_id):
+def delete_course(courseId):
     conn = getConnection()
     cursor = conn.cursor()
 
-    cursor.execute("DELETE FROM courses WHERE course_id=%s", (course_id,))
+    cursor.execute("DELETE FROM courses WHERE course_id=%s", (courseId,))
     conn.commit()
     conn.close()
 
