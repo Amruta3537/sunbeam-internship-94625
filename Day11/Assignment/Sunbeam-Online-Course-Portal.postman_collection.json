@@ -1,0 +1,752 @@
+{
+	"info": {
+		"_postman_id": "9b6f6b82-54f1-40f0-a30f-3e8ff8676972",
+		"name": "Sunbeam-Online-Course-Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50701949",
+		"_collection_link": "https://amruta3537-5986698.postman.co/workspace/Amruta-Dhumal's-Workspace~32b7accd-f338-41d5-8d5e-0b1371accd93/collection/50701949-9b6f6b82-54f1-40f0-a30f-3e8ff8676972?action=share&source=collection_link&creator=50701949"
+	},
+	"item": [
+		{
+			"name": "activecourses",
+			"item": [
+				{
+					"name": "active-course-admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/activecourses/all-active-courses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"activecourses",
+								"all-active-courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "active-courses-student",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDQ0NiwianRpIjoiNWE5OTA2OGMtMWE3Yy00OWNkLTk5ZTktNzA0MmFiNTA5MmNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inh5ekBnbWFpbC5jb20iLCJuYmYiOjE3NjY0OTQ0NDYsImNzcmYiOiJjNGNhNzE5MC0xOWI5LTQ3ZTAtODg0NC04ZWEyY2RmNjRhNmYiLCJyb2xlIjoic3R1ZGVudCJ9.hYWnsC_ozi51e9b5EmS1SoIHcFJfhss3l20w0oTd59Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/activecourses/all-active-courses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"activecourses",
+								"all-active-courses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courses",
+			"item": [
+				{
+					"name": "all-courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\"\r\n   \r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/courses/all-courses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"courses",
+								"all-courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-courses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_name\":\"web using python\",\r\n    \"description\":\"web using python\",\r\n    \"fees\":4000,\r\n    \"start_date\":\"2025-12-10\", \r\n    \"end_date\":\"2026-01-05\",\r\n    \"video_expire_days\":7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/courses/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"courses",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_name\":\"web using python\",\r\n    \"description\":\"web using python\",\r\n    \"fees\":4000,\r\n    \"start_date\":\"2025-12-10\",  \r\n    \"end_date\":\"2026-01-05\",\r\n    \"video_expire_days\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/courses/update/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"courses",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/courses/delete/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"courses",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "videos",
+			"item": [
+				{
+					"name": "all-videos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/videos/all-videos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"videos",
+								"all-videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-videos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\" : 1,\r\n    \"title\" : \"MERN video\",\r\n    \"youtube_url\" : \"https://youtu.be/cOcsecRATdc?si=25Qo4nxLTVOIlEgM\",\r\n    \"description\" : \"MERN video\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/videos/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"videos",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-videos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\" : 1,\r\n    \"title\" : \"MERN video\",\r\n    \"youtube_url\" : \"https://youtu.be/cOcsecRATdc?si=25Qo4nxLTVOIlEgM\",\r\n    \"description\" : \"MERN course video\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/videos/update/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"videos",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-video",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\" : 1,\r\n    \"title\" : \"MERN video\",\r\n    \"youtube_url\" : \"https://youtu.be/cOcsecRATdc?si=25Qo4nxLTVOIlEgM\",\r\n    \"description\" : \"MERN video\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/videos/delete/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"videos",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "reg-course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\" : 1,\r\n    \"name\" : \"xyz\",\r\n    \"email\" : \"xyz@gmail.com\",\r\n    \"mobile_no\" : \"9876543210\"\r\n   \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/student/register-to-course",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"student",
+								"register-to-course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDQ0NiwianRpIjoiNWE5OTA2OGMtMWE3Yy00OWNkLTk5ZTktNzA0MmFiNTA5MmNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inh5ekBnbWFpbC5jb20iLCJuYmYiOjE3NjY0OTQ0NDYsImNzcmYiOiJjNGNhNzE5MC0xOWI5LTQ3ZTAtODg0NC04ZWEyY2RmNjRhNmYiLCJyb2xlIjoic3R1ZGVudCJ9.hYWnsC_ozi51e9b5EmS1SoIHcFJfhss3l20w0oTd59Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"newPassword\": \"xyz123\",\r\n  \"confirmPassword\": \"xyz123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/student/change-password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"student",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDQ0NiwianRpIjoiNWE5OTA2OGMtMWE3Yy00OWNkLTk5ZTktNzA0MmFiNTA5MmNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inh5ekBnbWFpbC5jb20iLCJuYmYiOjE3NjY0OTQ0NDYsImNzcmYiOiJjNGNhNzE5MC0xOWI5LTQ3ZTAtODg0NC04ZWEyY2RmNjRhNmYiLCJyb2xlIjoic3R1ZGVudCJ9.hYWnsC_ozi51e9b5EmS1SoIHcFJfhss3l20w0oTd59Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/student/my-courses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"student",
+								"my-courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "courses-with-videos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDQ0NiwianRpIjoiNWE5OTA2OGMtMWE3Yy00OWNkLTk5ZTktNzA0MmFiNTA5MmNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inh5ekBnbWFpbC5jb20iLCJuYmYiOjE3NjY0OTQ0NDYsImNzcmYiOiJjNGNhNzE5MC0xOWI5LTQ3ZTAtODg0NC04ZWEyY2RmNjRhNmYiLCJyb2xlIjoic3R1ZGVudCJ9.hYWnsC_ozi51e9b5EmS1SoIHcFJfhss3l20w0oTd59Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/student/my_courses_with_videos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"student",
+								"my_courses_with_videos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "signup-student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"xyz@gmail.com\",\r\n    \"password\":\"student123\"\r\n   \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setup-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/setup-admin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"setup-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login-student",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"xyz@gmail.com\",\r\n    \"password\":\"student123\"\r\n   \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login-admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NjQ5NDI1NCwianRpIjoiOTE0OWI1ZmYtOTQ5Yy00MWQ5LWJlYzEtOWUxMzUzM2MxZmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsIm5iZiI6MTc2NjQ5NDI1NCwiY3NyZiI6ImVmZDUyMGZmLTNiZGQtNGMyMC1hM2E0LTRjMmE1ZmY2Y2VkZCIsInJvbGUiOiJhZG1pbiJ9.eCxVv34qcnMJ4cd-K5nVXkd1gSX2BId1uv-FpANzgcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
